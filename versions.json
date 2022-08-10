@@ -1,6 +1,10 @@
 {
     "customtags": {
-        "version": 102,
-        "file": "https://raw.githubusercontent.com/Adib23704/SAMP-Mods/main/Mods/FixCamera/moonloader/FixCamera%20by%20Adib.lua"
+        "version": 100,
+        "file": "https://github.com/Adib23704/SAMP-Mods/tree/main/Mods/CustomTags"
+    }
+    "screenviewer": {
+        "version": 100,
+        "file": "https://github.com/Adib23704/SAMP-Mods/tree/main/Mods/ScreenViewer"
     }
 }
