@@ -6,5 +6,9 @@
     "screenviewer": {
         "version": 100,
         "file": "https://github.com/Adib23704/SAMP-Mods/tree/main/Mods/ScreenViewer"
+    },
+    "highscore": {
+        "version": 100,
+        "file": "https://github.com/Adib23704/SAMP-Mods/tree/main/Mods/HZG-Highscore"
     }
 }
