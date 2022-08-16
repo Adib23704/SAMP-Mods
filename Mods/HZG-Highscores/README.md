@@ -9,7 +9,7 @@
 
 > Contact `Adib23704#8947` if any help needed.
 ### Screenshots:
-![img](https://raw.githubusercontent.com/Adib23704/SAMP-Mods/main/Mods/HZG-Highscores/screenshots/help.png)
+![img](https://raw.githubusercontent.com/Adib23704/SAMP-Mods/main/Mods/HZG-Highscores/screenshots/help.jpg)
 ### How to use?:
 - Command: `/highscore`
 ### Developer Info:

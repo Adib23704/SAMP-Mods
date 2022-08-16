@@ -82,9 +82,9 @@ local param = {
     "whore",
     "drugdealer",
     "drugsmuggler",
-    "armsdDealer",
+    "armsdealer",
     "mechanic",
-    "noxing",
+    "boxing",
     "fishing",
     "trucker",
     "carjacker",
@@ -196,14 +196,14 @@ function fetchHighscoreData(id)
                 for sValue in string.gmatch(tdTagRemoved, "%d+") do
                     if tonumber(sValue) > 20 then
                         tdTagRemoved = string.gsub(tdTagRemoved, sValue, "")
-                        table.insert(valueList, sValue)
+                        table.insert(valueList, addCommas(tonumber(sValue)))
                     end
                 end
             else     
                 for sValue in string.gmatch(tdTagRemoved, "%d+") do
                     if tonumber(sValue) > 20 then
                         tdTagRemoved = string.gsub(tdTagRemoved, sValue, "")
-                        table.insert(valueList, sValue)
+                        table.insert(valueList, addCommas(tonumber(sValue)))
                     end
                 end
             end
@@ -281,4 +281,10 @@ function checkUpdate()
     if tonumber(json.highscore.version) ~= tonumber(scr.version) then
         sampShowDialog(23741, "{FFFFFF}[ {FF0000}Highscores {FFFFFF}by {005522}Adib {FFFFFF}]:", "{FFFFFF}New version available for the mod {00FF00}Highscore {FFFFFF}by {005522}Adib\n{FFFFFF}Do you wanna {00FF00}download{FFFFFF} the latest version?", "Yes!", "Close", 0)
     end
+end
+
+function addCommas(number)
+    local i, j, minus, int, fraction = tostring(number):find('([-]?)(%d+)([.]?%d*)')
+    int = int:reverse():gsub("(%d%d%d)", "%1,")
+    return minus .. int:reverse():gsub("^,", "") .. fraction
 end
