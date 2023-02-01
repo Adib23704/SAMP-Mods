@@ -1,0 +1,3 @@
+[submodule "Mods/ChatCounter/moonloader"]
+	path = Mods/ChatCounter/moonloader
+	url = https://github.com/Adib23704/libs
